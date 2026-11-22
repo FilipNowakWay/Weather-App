@@ -37,4 +37,3 @@ export function displayToday(data) {
     weatherCr.append(locationH2, weatherTodayImg, todayTemp, weatherDesc);
   });
 }
-
