@@ -1,5 +1,7 @@
 # Weather App
 
+Live preview : [here](https://filipnowakway.github.io/Weather-App/)
+
 A small vanilla JavaScript weather app. It uses your location to show the
 current forecast, lets you search for any city, and switches between °C and °F.
 Weather data comes from the [Visual Crossing](https://www.visualcrossing.com/)
