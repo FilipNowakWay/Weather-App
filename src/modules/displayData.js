@@ -11,12 +11,11 @@ export function displayToday(data) {
     const weatherTodayImg = document.createElement("img");
     const iconName = weather.currentConditions.icon;
     console.log(iconName);
-    const iconModule = await import(`../assets/icons/${iconName}.png`);
+    const iconModule = await import(`../assets/icons/${iconName}.svg`);
     const iconUrl = iconModule.default;
     weatherTodayImg.src = iconUrl;
 
-    //     //temp
-    //     console.log(weather.currentConditions.temp);
+    //temp
     const todayTemp = document.createElement("h1");
     todayTemp.id = "todayTemp";
     todayTemp.dataset.celsius = weather.currentConditions.temp;
@@ -28,23 +27,14 @@ export function displayToday(data) {
     const spanToday = document.createElement("span");
     spanToday.id = "spanToday";
     spanToday.textContent = "°C";
-
     todayTemp.append(tempValue, spanToday);
-    //     //conditions
-    //     console.log(weather.currentConditions.conditions);
-    //
-    //     //feels like
-    //     console.log(weather.currentConditions.feelslike);
-    //
-    //     //sunset at
-    //     console.log(weather.currentConditions.sunset);
-    //
-    //     //desc
-    //     console.log(weather.description);
-    //
-    //     // next 14days array
-    //     console.log(weather.days);
 
-    weatherCr.append(locationH2, weatherTodayImg, todayTemp);
+    //desc
+    console.log(weather.description);
+    const weatherDesc = document.createElement("p");
+    weatherDesc.textContent = weather.description;
+
+    weatherCr.append(locationH2, weatherTodayImg, todayTemp, weatherDesc);
   });
 }
+
