@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvanilla_js_boilerplate=self.webpackChunkvanilla_js_boilerplate||[]).push([[449],{449(a,e,l){a.exports=l.p+"5a95427cbc9a431f7838.svg"}}]);
